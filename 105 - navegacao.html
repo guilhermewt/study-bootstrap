@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>navegacao</title>
+  </head>
+
+  <!--  * class="navbar navbar-default" = colocar a background,font-size em cinza 
+         * class="navbar-header"
+         * class="navbar-brand" logo
+         * class="nav navbar-nav navbar-right ajeita os links e o outro coloca a direita
+
+         (criar dropdown)
+         *class="dropdown", dropdown-toggle, data-toggle="dropdown", class="dropdown-menu"
+
+         * type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#barra-navegacao",id="barra-navegacao",class="icon-bar",class="collapse navbar-collapse", class="sr-only"
+         *   -->
+  <body>
+
+          <nav class="navbar navbar-default">
+            <div class="container">
+              
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+                    <span class="sr-only">Alternar Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">LOGO</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="barra-navegacao">
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Cliente</a></li>
+                    <li><a href="#">Produto</a></li>
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Minha conta 
+                        <span class="caret"></span>
+                      </a>
+
+                       <ul class="dropdown-menu">
+                         <li><a href="#">Editar</a></li>
+                         <li><a href="#">Logout</a></li>
+                       </ul>
+                    </li>
+                  </ul>
+
+                </div>
+
+            </div>
+              
+            
+
+          </nav> 
+      
+      <!-- p********************problema esta no body ---*****-->
+       <div class="container">
+
+          <div class="page-header">
+            <h1>navegacao bootstrap</h1>
+          </div>
+
+    
+
+
+      </div>  
+
+
+          
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+   
+  </body>
+</html>

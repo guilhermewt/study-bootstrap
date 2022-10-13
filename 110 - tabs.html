@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>tabs</title>
+  </head>
+     
+  <body>
+    <!-- 
+       abas
+      * <ul class="nav nav-tabs" role="tablist">
+          - <li class="active"><a href="" role="tab">informações</a></li> só o primeiro com active
+       conteudos   
+      * <div class="tab-content">
+          - <div class="tab-pane active" role="tabpanel">, h3,p   
+      * colocar o #id e o data-toggle="tab nos links para a clicar carregar a div especifica"
+         - <li class="active"><a href="#info" data-toggle="tab" role="tab">informações</a></li>     
+      * e nas divs apenas a identificacao 
+         - <div class="tab-pane active" id="info" role="tabpanel">
+     -->
+
+
+    <div class="container">
+      <div class="page-header">
+        <h1> bootstrap tabs</h1>
+        <p class="lead">alterna facilmente entre conteudos</p>
+      </div>
+      <!-- criacao das abas -->
+     <ul class="nav nav-tabs" role="tablist">
+       <li class="active"><a href="#info" data-toggle="tab" role="tab">informações</a></li>
+       <li><a href="#avaliacoes" data-toggle="tab" role="tab">avaliacoes</a></li>
+       <li><a href="#compre" data-toggle="tab" role="tab"> compre tambem</a></li>
+     </ul>
+
+     <!-- conteudo das abas -->
+     <div class="tab-content">
+
+       <!-- aba informacoes -->
+       <div class="tab-pane active" id="info" role="tabpanel">
+         <h3>informações</h3>
+         <p>lorem ipson dolorem sit amet,informacoes</p>
+       </div>
+
+       <!-- aba avaliacoes -->
+       <div class="tab-pane" id="avaliacoes" role="tabpanel">
+         <h3>avaliações</h3>
+         <p>lorem ipson dolorem sit amet,avaliações</p>
+       </div>
+
+       <!-- aba compre tambem -->
+       <div class="tab-pane" id="compre" role="tabpanel">
+         <h3>compre tambem</h3>
+         <p>lorem ipson dolorem sit amet,compre tambem</p>
+       </div>
+     </div>
+      
+    </div>
+          
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  </body>
+</html>
+

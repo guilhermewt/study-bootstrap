@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>alert</title>
+  </head>
+     
+  <body>
+    <!--
+      - <div class="alert alert-success"> alert alert-info,alert alert-warning,alert alert-danger
+         <strong>sucess</strong>
+        </div> 
+
+      - x para fechar o alert
+         - button , class="close" data-dismiss="alert", <span>&times;</span>
+      
+      - role alert serve para pessoas com deficiencias pois usa-se o leitor de tela
+
+      - aria serve como um criterio para leitores de tela eu posso tanto dizer que é um botao fechar, quanto eu posso dizer para nao ler
+      -->
+
+
+    <div class="container">
+      <div class="page-header">
+        <h1> bootstrap alert</h1>
+      </div>
+
+      <!-- acessible rich internet application (ARIA) -->
+      <div class="alert alert-success" >
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>sucess</strong>
+      </div>
+
+
+      <div class="alert alert-info" role="alert">
+        <strong>info</strong>
+      </div>
+
+
+      <div class="alert alert-warning" role="alert">
+        <strong>warning</strong>
+      </div>
+
+
+      <div class="alert alert-danger" role="alert">
+        <strong>danger</strong>
+      </div>
+      
+    </div>
+          
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+   
+  </body>
+</html>
+
